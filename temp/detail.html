@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <div style="background-color: white;">
+        <h6><a href="{% url 'home' %}"><img src="https://png.pngtree.com/png-vector/20190501/ourmid/pngtree-vector-back-icon-png-image_1009850.jpg" width="30px" height="30px"></h6>
+    </div>
+
+    <div>
+        <h1>{{ post.title }}</h1>
+        <h3>{{ post.author }}</h3>
+        {{ post.body }}
+    </div>
+
+
+{% endblock content %}
